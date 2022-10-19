@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Ultrasonic Sensor</title>
+</head>
+<body>
+
+    <div class="legorobot">
+          <img src="pic/Legorobot.jpeg" alt="Legorobot" title="Legorobot">
+    </div>  
+
+    <div class="sidebar">
+        <a class="active" href="Ultrasonics.html">Bevezető</a> 
+        <a href="feladat.html">Feladatok és kódok</a> 
+        <a href="Rolunk.html">Rólunk</a> 
+     </div>
+
+    <h1 id="programok">Egyszerű programok Ultrasonic Szenzorral:</h1>
+
+    <br>
+    
+    <div class="feladatok">
+        <h1 style="color: black; text-shadow: 3px 3px 4px red;">1.Feladat</h1>
+        <p> <img src="pic/feladat.png" align="left" alt="feladat" title="feladat">  
+            <p>1.Indítsa el a programot.</p>
+            <p>2.Kapcsolja be mindkét motort 50-es sebességgel.</p>
+            <p>3.Várja meg, amíg az ultrahangos érzékelő 20 cm-nél kisebb távolságban észlel egy akadályt.</p>
+            <p>4.Kapcsolja ki mindkét motort.</p>   
+        </p>
+    
+    <br>
+    <br>
+        <h1 style="color: black; text-shadow: 3px 3px 4px red;">2.Feladat</h1>
+        <p> <img src="pic/feladat2.webp" align="left" alt="feladat" title="feladat" style="height: 400px;">  
+            <p>1.Indítsa el a programot.</p>
+            <p>2.Kapcsolja be mindkét motort 50-es sebességgel.</p>
+            <p>3.Ha az ultrahangos érzékelő akadályt észlel 10 cm-nél kisebb távolságban, kapcsolja ki mindkét motort.</p>
+            <p>Vagy</p>
+            <p>4.Ha az ultrahangos érzékelő akadályt észlel 20 cm-nél kisebb távolságban, kapcsolja be mindkét motort 10 sebességnél.</p>
+            <p>VAGY</p>
+            <p>5.Kapcsolja be mindkét motort 50-es sebességgel.</p>
+            <p>6.Ismételje meg örökké a 3–7. lépést.</p>
+        </p>
+
+<br>
+<br>
+
+        <h1 style="color: black; text-shadow: 3px 3px 4px red;">3.Feladat</h1>
+        <p> <img src="pic/3.feladat.png" align="left" alt="feladat" title="feladat" style="height: 250px;">  
+            <p style="font-size: 15px;">1.Indítsa el a programot.</p>
+            <p style="font-size: 20px;">2.Várja a parancsot:ez ellenőrzi,hogy az érzékelő =, <, > vagy nem =, <, >.
+                Egyenlő egy adott távolsággal egy akadálytól. Az előző parancs folytatja a
+                addig működik, amíg a WAIT parancs teljesül.</p>
+            <p style="font-size: 15px;">3.Kormányzás mozgatása: Bekapcsolja a motorokat a
+                fordított mozgást, ha az érzékelő 4
+                hüvelyknyi távolságra van egy tárgytól</p>
+            <p style="font-size: 20px;">4.Mozgás Kormányzás: Fordul:kikapcsolja a motorokat</p>   
+        </p>
+    
+    </div>
+
+<br>
+ 
+    <div class="kodok">
+        <a href="https://pybricks.com/ev3-micropython/ev3devices.html#ultrasonic-sensor" title="Ultrasonic Sensor kodok">
+        <h1 style="color: black; text-shadow: 3px 3px 4px green;">Ultrasonic Sensor kodok</h1>
+        </a>
+        <ul>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5><em>Parameters:</em> Port, amelyhez az érzékelő csatlakozik.</h5></li>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5><em>Distance(silent=False):</em> Ultrasonic hanghullámok segítségével méri az érzékelő és egy tárgy közötti távolságot.</h5></li>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5><em>Paraméterek:</em> - Válassza a True értéket, hogy a távolság mérése után kikapcsolja az érzékelőt. Ez csökkenti a más ultrahangos érzékelőkkel való interferenciát. Ha ezt túl gyakran teszi, az érzékelő lefagyhat. Ha ez megtörténik, húzza ki, majd dugja vissza.</h5></li>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5><em>Visszatér:</em> Távolság.</h5></li>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5><em>Visszatérés típusa:</em> távolság: mm</h5></li>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5><em>presence()</em> Ellenőrzi más ultrasonic érzékelők jelenlétét az ultrahangos hangok érzékelésével.</h5></li>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5>Ha a másik ultrasonic érzékelő csendes üzemmódban működik, akkor csak akkor érzékeli az adott érzékelő jelenlétét, amikor az éppen mérést végez.</li>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5><em>Visszaadja:</em> True, ha az ultrahangos hangokat észleli, False, ha nem.</h5></li>
+            <li style="color: black; text-shadow: 3px 3px 4px green;"><h5><em>Visszatérési típus:</em> bool</li></h5>
+        </ul>
+    </div>
+    
+    </body>
+    </html>
